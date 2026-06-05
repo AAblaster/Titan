@@ -325,36 +325,19 @@ img {
     margin-bottom: 72px;
 }
 
-/* Dashboard Mockup */
-.hero-dashboard {
-    position: relative;
-    max-width: 1060px;
+/* Hero Video Card */
+.hero-video-card {
+    max-width: 900px;
     margin: 0 auto;
-}
-
-.hero-dashboard::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 200px;
-    background: linear-gradient(to top, var(--bg) 0%, transparent 100%);
-    pointer-events: none;
-    z-index: 2;
-}
-
-.dashboard-frame {
-    background: var(--surface);
     border: 1px solid var(--border);
-    border-radius: 16px 16px 0 0;
+    border-radius: 20px 20px 0 0;
+    background: var(--surface);
     box-shadow: inset 0 1px 0 var(--white),
-                0 0 0 1px rgba(0,0,0,0.02),
                 0 20px 60px -10px rgba(0,0,0,0.08);
     overflow: hidden;
 }
 
-.dashboard-toolbar {
+.hero-video-toolbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -362,183 +345,24 @@ img {
     border-bottom: 1px solid var(--border);
 }
 
-.dashboard-dots {
-    display: flex;
-    gap: 7px;
-}
-
-.dashboard-dots span {
-    width: 11px;
-    height: 11px;
-    border-radius: 50%;
-    background: var(--border);
-}
-
-.dashboard-toolbar-tabs {
-    display: flex;
-    gap: 2px;
-}
-
-.dashboard-toolbar-tabs span {
-    padding: 5px 14px;
-    font-size: 12px;
-    font-weight: 500;
-    color: var(--text-dim);
-    border-radius: 6px;
-    cursor: default;
-}
-
-.dashboard-toolbar-tabs span.active {
-    background: var(--white);
-    color: var(--text);
-    border: 1px solid var(--border);
-    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
-}
-
-.dashboard-body {
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 16px;
-}
-
-.dash-stat-card {
-    background: var(--white);
-    border: 1px solid var(--border-light);
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: inset 0 1px 0 var(--white);
-}
-
-.dash-stat-label {
-    font-size: 12px;
-    font-weight: 500;
-    color: var(--text-dim);
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    margin-bottom: 8px;
-}
-
-.dash-stat-value {
-    font-size: 28px;
-    font-weight: 800;
-    letter-spacing: -0.03em;
-    font-variant-numeric: tabular-nums;
-}
-
-.dash-stat-change {
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-    margin-top: 6px;
+.hero-video-label {
     font-size: 12px;
     font-weight: 600;
-    color: #22C55E;
-}
-
-.dash-stat-change.down { color: #EF4444; }
-
-/* Data Table inside dashboard */
-.dashboard-table-area {
-    grid-column: 1 / -1;
-    background: var(--white);
-    border: 1px solid var(--border-light);
-    border-radius: 12px;
-    overflow: hidden;
-}
-
-.dash-table-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 16px 20px;
-    border-bottom: 1px solid var(--border-light);
-}
-
-.dash-table-header span {
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.dash-table-header .dash-filter {
-    font-size: 12px;
-    font-weight: 500;
     color: var(--text-dim);
-    padding: 4px 12px;
-    border: 1px solid var(--border);
-    border-radius: 6px;
+    letter-spacing: -0.01em;
 }
 
-.dash-table {
+.hero-video-body {
+    background: #e8e9eb;
+    line-height: 0;
+}
+
+.hero-video-body video {
     width: 100%;
-}
-
-.dash-table-row {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 100px;
-    padding: 12px 20px;
-    align-items: center;
-    border-bottom: 1px solid var(--border-light);
-    font-size: 13px;
-}
-
-.dash-table-row.head {
-    font-size: 11px;
-    font-weight: 600;
-    color: var(--text-dim);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    background: rgba(0,0,0,0.015);
-}
-
-.dash-table-row:last-child {
-    border-bottom: none;
-}
-
-.dash-cell {
-    font-variant-numeric: tabular-nums;
-}
-
-.dash-cell-name {
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.dash-cell-icon {
-    width: 28px;
-    height: 28px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 13px;
-    font-weight: 700;
-    flex-shrink: 0;
-}
-
-.dash-status {
-    display: inline-flex;
-    padding: 3px 10px;
-    border-radius: 100px;
-    font-size: 11px;
-    font-weight: 600;
-}
-
-.dash-status.active {
-    background: #DCFCE7;
-    color: #166534;
-}
-
-.dash-status.pending {
-    background: #FEF3C7;
-    color: #92400E;
-}
-
-.dash-status.draft {
-    background: var(--surface);
-    color: var(--text-muted);
+    height: auto;
+    display: block;
+    max-height: 540px;
+    object-fit: contain;
 }
 
 /* ===== SECTION 2: SPEED METRICS ===== */
