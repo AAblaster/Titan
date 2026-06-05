@@ -18,16 +18,16 @@ Silver & Acid Light-Mode SaaS Landing Page
 }
 
 :root {
-    --bg:           #F4F7F9; /* Cool-toned Light Grey */
-    --surface:      #E9ECEF; /* Soft Grey Surface */
-    --text:         #0A192F; /* Deep Navy (instead of black) */
-    --text-muted:   #4A5568; /* Muted Navy-Grey */
-    --text-dim:     #94A3B8; /* Dimmed Steel Grey */
-    --accent:       #003366; /* Classic Navy Blue */
-    --accent-hover: #004488; /* Slightly brighter Navy */
-    --border:       #CBD5E1; /* Muted Blue-Grey border */
-    --border-light: #E2E8F0; /* Subtle Grey border */
-    --white:        #FFFFFF; /* Pure White */
+    --bg:           #F4F7F9;
+    --surface:      #E9ECEF;
+    --text:         #0A192F;
+    --text-muted:   #4A5568;
+    --text-dim:     #94A3B8;
+    --accent:       #336699; /* Changed this */
+    --accent-hover: #4682B4; /* Changed this */
+    --border:       #CBD5E1;
+    --border-light: #E2E8F0;
+    --white:        #FFFFFF;
 
     /* Spacing */
     --section-pad: clamp(80px, 10vw, 140px);
