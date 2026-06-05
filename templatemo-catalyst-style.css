@@ -337,7 +337,7 @@ img {
     height: auto;
     display: block;
     max-height: 80vh;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 /* ===== SECTION 2: SPEED METRICS ===== */
