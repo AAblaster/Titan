@@ -325,43 +325,18 @@ img {
     margin-bottom: 72px;
 }
 
-/* Hero Video Card */
-.hero-video-card {
-    max-width: 900px;
-    margin: 0 auto;
-    border: 1px solid var(--border);
-    border-radius: 20px 20px 0 0;
-    background: var(--surface);
-    box-shadow: inset 0 1px 0 var(--white),
-                0 20px 60px -10px rgba(0,0,0,0.08);
-    overflow: hidden;
-}
-
-.hero-video-toolbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 14px 20px;
-    border-bottom: 1px solid var(--border);
-}
-
-.hero-video-label {
-    font-size: 12px;
-    font-weight: 600;
-    color: var(--text-dim);
-    letter-spacing: -0.01em;
-}
-
-.hero-video-body {
+/* Hero Video Section */
+.hero-video-section {
+    width: 100%;
     background: #e8e9eb;
     line-height: 0;
 }
 
-.hero-video-body video {
+.hero-video-section video {
     width: 100%;
     height: auto;
     display: block;
-    max-height: 540px;
+    max-height: 80vh;
     object-fit: contain;
 }
 
