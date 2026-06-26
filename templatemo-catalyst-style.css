@@ -1190,8 +1190,25 @@ img {
 }
 
 /* ==========================================================================
-   ===== SHOP SECTION ARCHITECTURE (REPLACES PRICING) =======================
+   ===== HARDWARE SHOP LAYOUT STYLES ========================================
    ========================================================================== */
+
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-dim);
+}
+
 .shop {
     padding: var(--section-pad) 0;
 }
@@ -1214,7 +1231,6 @@ img {
     }
 }
 
-/* --- Product Cards Components --- */
 .product-card {
     display: flex;
     flex-direction: column;
@@ -1222,7 +1238,6 @@ img {
     height: 100%;
 }
 
-/* Multi-photo Grid Gallery layout: 1 large main view, 2 stacked thumbnails */
 .product-gallery {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -1238,7 +1253,7 @@ img {
     height: 100%;
     object-fit: cover;
     border-radius: 6px;
-    background-color: var(--border-light); /* Fallback style until image imports */
+    background-color: var(--border-light); 
 }
 
 .product-gallery .img-main {
@@ -1246,7 +1261,6 @@ img {
     height: 168px;
 }
 
-/* --- Interior Card Content --- */
 .product-info {
     padding: 24px;
     display: flex;
@@ -1284,7 +1298,6 @@ img {
     flex-grow: 1;
 }
 
-/* Auxiliary Helper for Uniform Buttons */
 .w-100 {
     width: 100%;
 }
