@@ -5,28 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Titan Robotics</title>
 
-    <!--
-
-    Titan Robotics
-
-    -->
-
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <!-- Template CSS -->
     <link rel="stylesheet" href="templatemo-catalyst-style.css">
 </head>
 <body>
-    <!-- ===== NAVIGATION ===== -->
     <nav class="nav" role="navigation" aria-label="Main navigation">
         <div class="nav-inner">
-            <a href="#" class="nav-logo" aria-label="Catalyst Home">
+            <a href="#" class="nav-logo" aria-label="Titan Robotics Home">
                 <span class="nav-logo-mark">
-                    <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3 8L7 4L13 8L7 12L3 8Z" fill="#111"/>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
                     </svg>
                 </span>
                 Titan Robotics
@@ -34,12 +25,12 @@
             <ul class="nav-links" id="navLinks">
                 <li><a href="#metrics">Performance</a></li>
                 <li><a href="#engine">Features</a></li>
-                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#shop">Shop</a></li>
                 <li><a href="#faq">FAQ</a></li>
             </ul>
             <div class="nav-cta">
                 <a href="#" class="btn-ghost">Log In</a>
-                <a href="#pricing" class="btn-acid">Sign Up</a>
+                <a href="#shop" class="btn-acid">Shop Now</a>
             </div>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
                 <span></span>
@@ -47,7 +38,6 @@
         </div>
     </nav>
 
-    <!-- ===== SECTION 1: HERO ===== -->
     <section class="hero">
         <div class="container">
             <div class="hero-badge reveal">
@@ -57,7 +47,7 @@
             <h1 class="reveal">Affordable actuators built for <span class="accent-word">power</span></h1>
             <p class="hero-sub reveal">Multi-material 3D printed high torque actuators designed for everyday inventors.</p>
             <div class="hero-actions reveal">
-                <a href="#pricing" class="btn-acid">
+                <a href="#shop" class="btn-acid">
                     Buy Now
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </a>
@@ -66,14 +56,12 @@
         </div>
     </section>
     
-    <!-- ===== HERO VIDEO (full width) ===== -->
     <section class="hero-video-section" id="hero-video">
         <video autoplay muted loop playsinline>
             <source src="videos/hero.mp4" type="video/mp4" />
         </video>
     </section>
 
-    <!-- ===== SECTION 2: SPEED METRICS ===== -->
     <section class="metrics" id="metrics">
         <div class="container">
             <p class="metrics-label reveal">Performance that speaks for itself</p>
@@ -94,7 +82,6 @@
         </div>
     </section>
 
-    <!-- ===== SECTION 3: THE ENGINE — BENTO GRID ===== -->
     <section class="engine" id="engine">
         <div class="container">
             <div class="section-header reveal">
@@ -148,9 +135,9 @@
                     <div class="bento-card-visual">
                         <div class="mini-code">
                             <span class="keyword">SELECT</span> user_id, <span class="keyword">COUNT</span>(*)<br>
-                            <span class="keyword">FROM</span> events<br>
+                            FROM events<br>
                             <span class="keyword">WHERE</span> ts > <span class="string">'2026-01'</span><br>
-                            <span class="keyword">GROUP BY</span> 1 <span class="comment">-- 42ms ⚡</span>
+                            <span class="keyword">GROUP BY</span> 1 
                         </div>
                     </div>
                 </div>
@@ -158,124 +145,65 @@
         </div>
     </section>
 
-    <!-- ===== SECTION 4: PRICING ===== -->
-    <section class="pricing" id="pricing">
+    <section class="shop" id="shop">
         <div class="container">
             <div class="section-header reveal">
-                <p class="section-tag">Pricing</p>
-                <h2 class="section-title">Simple, transparent pricing</h2>
+                <p class="section-tag">Hardware Shop</p>
+                <h2 class="section-title">High-Performance Hardware</h2>
             </div>
-            <div class="toggle-wrap reveal">
-                <div class="toggle-container">
-                    <button class="toggle-btn" data-plan="monthly" id="toggleMonthly">Monthly</button>
-                    <button class="toggle-btn active" data-plan="yearly" id="toggleYearly">Yearly</button>
-                </div>
-                <span class="toggle-save visible" id="toggleSave">Save 25%</span>
-            </div>
-            <div class="pricing-grid">
-                <!-- Starter -->
-                <div class="card pricing-card reveal">
-                    <div class="pricing-plan-name">Starter</div>
-                    <div class="pricing-plan-desc">For small teams getting started</div>
-                    <div class="pricing-amount">
-                        <span class="pricing-currency">$</span>
-                        <span class="pricing-value" data-monthly="30" data-yearly="22">22</span>
+            
+            <div class="shop-grid">
+                <div class="card product-card reveal">
+                    <div class="product-gallery">
+                        <img src="images/product1-main.jpg" alt="Product One Main View" class="img-main">
+                        <img src="images/product1-side.jpg" alt="Product One Side View" class="img-thumb-1">
+                        <img src="images/product1-detail.jpg" alt="Product One Detail View" class="img-thumb-2">
                     </div>
-                    <p class="pricing-period">per seat / month</p>
-                    <p class="pricing-billed yearly-active" data-monthly="Billed monthly" data-yearly="$264 billed annually">$264 billed annually</p>
-                    <a href="#" class="btn-ghost">Get Started</a>
-                    <ul class="pricing-features">
-                        <li>
-                            <svg viewBox="0 0 18 18" fill="none"><path d="M4 9l3.5 3.5L14 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                            Up to 5 team members
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 18 18" fill="none"><path d="M4 9l3.5 3.5L14 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                            1 billion events / month
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 18 18" fill="none"><path d="M4 9l3.5 3.5L14 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                            7-day data retention
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 18 18" fill="none"><path d="M4 9l3.5 3.5L14 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                            Community support
-                        </li>
-                    </ul>
-                </div>
-                <!-- Pro -->
-                <div class="card pricing-card featured reveal">
-                    <div class="pricing-plan-name">Pro</div>
-                    <div class="pricing-plan-desc">For scaling data teams</div>
-                    <div class="pricing-amount">
-                        <span class="pricing-currency">$</span>
-                        <span class="pricing-value" data-monthly="100" data-yearly="75">75</span>
+                    <div class="product-info">
+                        <div class="product-meta">
+                            <h3 class="product-title">Titan Actuator X-1</h3>
+                            <span class="product-price">$149.00</span>
+                        </div>
+                        <p class="product-desc">High-torque density planetary gearbox module equipped with integrated magnetic encoder feedback for custom industrial and dynamic applications.</p>
+                        <button class="btn-acid w-100">Add to Cart</button>
                     </div>
-                    <p class="pricing-period">per seat / month</p>
-                    <p class="pricing-billed yearly-active" data-monthly="Billed monthly" data-yearly="$900 billed annually">$900 billed annually</p>
-                    <a href="#" class="btn-acid">Get Started</a>
-                    <ul class="pricing-features">
-                        <li>
-                            <svg viewBox="0 0 18 18" fill="none"><path d="M4 9l3.5 3.5L14 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                            Unlimited team members
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 18 18" fill="none"><path d="M4 9l3.5 3.5L14 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                            50 billion events / month
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 18 18" fill="none"><path d="M4 9l3.5 3.5L14 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                            Unlimited data retention
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 18 18" fill="none"><path d="M4 9l3.5 3.5L14 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                            Priority support + SLA
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 18 18" fill="none"><path d="M4 9l3.5 3.5L14 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                            SSO &amp; audit logs
-                        </li>
-                    </ul>
                 </div>
-                <!-- Enterprise -->
-                <div class="card pricing-card reveal">
-                    <div class="pricing-plan-name">Enterprise</div>
-                    <div class="pricing-plan-desc">For mission-critical deployments</div>
-                    <div class="pricing-amount">
-                        <span class="pricing-currency">$</span>
-                        <span class="pricing-value" data-monthly="500" data-yearly="375">375</span>
+
+                <div class="card product-card reveal">
+                    <div class="product-gallery">
+                        <img src="images/product2-main.jpg" alt="Product Two Main View" class="img-main">
+                        <img src="images/product2-side.jpg" alt="Product Two Side View" class="img-thumb-1">
+                        <img src="images/product2-detail.jpg" alt="Product Two Detail View" class="img-thumb-2">
                     </div>
-                    <p class="pricing-period">starts from / month</p>
-                    <p class="pricing-billed yearly-active" data-monthly="Billed monthly" data-yearly="$4,500 billed annually">$4,500 billed annually</p>
-                    <a href="#" class="btn-ghost">Contact Sales</a>
-                    <ul class="pricing-features">
-                        <li>
-                            <svg viewBox="0 0 18 18" fill="none"><path d="M4 9l3.5 3.5L14 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                            Everything in Pro
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 18 18" fill="none"><path d="M4 9l3.5 3.5L14 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                            Dedicated infrastructure
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 18 18" fill="none"><path d="M4 9l3.5 3.5L14 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                            Custom integrations
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 18 18" fill="none"><path d="M4 9l3.5 3.5L14 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                            24/7 dedicated support
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 18 18" fill="none"><path d="M4 9l3.5 3.5L14 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                            99.99% SLA guarantee
-                        </li>
-                    </ul>
+                    <div class="product-info">
+                        <div class="product-meta">
+                            <h3 class="product-title">Titan Cycloidal Drive V2</h3>
+                            <span class="product-price">$289.00</span>
+                        </div>
+                        <p class="product-desc">Zero-backlash precision drive mechanism built specifically for heavy payload multi-axis robotic arms requiring absolute angular position tracking.</p>
+                        <button class="btn-acid w-100">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card product-card reveal">
+                    <div class="product-gallery">
+                        <img src="images/product3-main.jpg" alt="Product Three Main View" class="img-main">
+                        <img src="images/product3-side.jpg" alt="Product Three Side View" class="img-thumb-1">
+                        <img src="images/product3-detail.jpg" alt="Product Three Detail View" class="img-thumb-2">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-meta">
+                            <h3 class="product-title">Titan Core Hub Controller</h3>
+                            <span class="product-price">$89.00</span>
+                        </div>
+                        <p class="product-desc">Master logic controller featuring high-speed CAN-bus interfaces, onboard cooling, and multi-motor telemetry data monitoring systems.</p>
+                        <button class="btn-acid w-100">Add to Cart</button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ===== SECTION 5: FAQ ===== -->
     <section class="faq" id="faq">
         <div class="container">
             <div class="section-header reveal">
@@ -289,85 +217,55 @@
             <div class="faq-list">
                 <div class="faq-item reveal">
                     <button class="faq-question" aria-expanded="false">
-                        How long does the free trial last?
+                        How long does shipping take?
                         <span class="faq-icon"><svg viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7h12" stroke="#111" stroke-width="1.5" stroke-linecap="round"/></svg></span>
                     </button>
                     <div class="faq-answer">
-                        <div class="faq-answer-inner">Every plan includes a 14-day free trial with full access to all features. No credit card required to get started. At the end of the trial, you can choose a plan or export your data.</div>
+                        <div class="faq-answer-inner">Standard production hardware orders ship within 3–5 business days. Custom parameters or customized gearbox units can require up to two weeks build time before departure.</div>
                     </div>
                 </div>
                 <div class="faq-item reveal">
                     <button class="faq-question" aria-expanded="false">
-                        Can I switch plans later?
+                        Do you provide CAD design prints?
                         <span class="faq-icon"><svg viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7h12" stroke="#111" stroke-width="1.5" stroke-linecap="round"/></svg></span>
                     </button>
                     <div class="faq-answer">
-                        <div class="faq-answer-inner">Yes. Upgrade or downgrade any time from your account settings. When upgrading, you only pay the prorated difference. When downgrading, the remaining balance is applied as credit toward future invoices.</div>
-                    </div>
-                </div>
-                <div class="faq-item reveal">
-                    <button class="faq-question" aria-expanded="false">
-                        What data sources do you support?
-                        <span class="faq-icon"><svg viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7h12" stroke="#111" stroke-width="1.5" stroke-linecap="round"/></svg></span>
-                    </button>
-                    <div class="faq-answer">
-                        <div class="faq-answer-inner">Catalyst connects to 50+ data sources out of the box, including PostgreSQL, MySQL, BigQuery, Snowflake, Redshift, S3, Kafka, and most popular REST APIs. Custom connectors are available on the Enterprise plan.</div>
-                    </div>
-                </div>
-                <div class="faq-item reveal">
-                    <button class="faq-question" aria-expanded="false">
-                        Is my data secure?
-                        <span class="faq-icon"><svg viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7h12" stroke="#111" stroke-width="1.5" stroke-linecap="round"/></svg></span>
-                    </button>
-                    <div class="faq-answer">
-                        <div class="faq-answer-inner">Absolutely. All data is encrypted at rest (AES-256) and in transit (TLS 1.3). We are SOC 2 Type II certified and GDPR compliant. Enterprise customers also get dedicated infrastructure with VPC peering and custom encryption keys.</div>
-                    </div>
-                </div>
-                <div class="faq-item reveal">
-                    <button class="faq-question" aria-expanded="false">
-                        Do you offer onboarding support?
-                        <span class="faq-icon"><svg viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7h12" stroke="#111" stroke-width="1.5" stroke-linecap="round"/></svg></span>
-                    </button>
-                    <div class="faq-answer">
-                        <div class="faq-answer-inner">Pro customers get access to our onboarding team for the first 30 days. Enterprise customers receive a dedicated solutions engineer for the full implementation. All plans include access to our docs, tutorials, and community forum.</div>
+                        <div class="faq-answer-inner">Yes. Every single component features accessible dimension engineering schematics and open-source solid STEP file downloads directly within your user portal profiles.</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ===== SECTION 6: CTA BANNER ===== -->
     <section class="cta-banner">
         <div class="container">
             <div class="cta-banner-inner reveal">
                 <p class="cta-banner-tag">Get started today</p>
-                <h2>Ready to accelerate your data?</h2>
-                <p>Join 2,000+ teams shipping faster with sub-second analytics. Free for 14 days.</p>
+                <h2>Ready to build your next robot?</h2>
+                <p>Join 2,000+ engineers shipping designs faster with sub-second hardware response platforms.</p>
                 <div class="cta-banner-actions">
-                    <a href="#" class="btn-acid">
-                        Start Free Trial
+                    <a href="#shop" class="btn-acid">
+                        Browse Catalog
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     </a>
-                    <a href="#" class="btn-dark-ghost">Talk to Sales</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ===== SECTION 7: FOOTER ===== -->
     <footer class="footer" id="footer">
         <div class="container">
             <div class="footer-grid">
                 <div>
-                    <a href="#" class="nav-logo" aria-label="Catalyst Home">
+                    <a href="#" class="nav-logo" aria-label="Titan Robotics Home">
                         <span class="nav-logo-mark">
-                            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M3 8L7 4L13 8L7 12L3 8Z" fill="#111"/>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
                             </svg>
                         </span>
-                        Catalyst
+                        Titan Robotics
                     </a>
-                    <p class="footer-brand-desc">The analytics platform built for speed. Sub-second queries, real-time pipelines, and infinite scale.</p>
+                    <p class="footer-brand-desc">High torque density components built for speed, durability, and open integration architectures.</p>
                 </div>
                 <div>
                     <h4 class="footer-col-title">Resources</h4>
@@ -375,42 +273,29 @@
                         <li><a href="#">Documentation</a></li>
                         <li><a href="#">API Reference</a></li>
                         <li><a href="#">Blog</a></li>
-                        <li><a href="#">Changelog</a></li>
-                        <li><a href="#">Status Page</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="footer-col-title">Support</h4>
                     <ul class="footer-links">
                         <li><a href="#">Help Center</a></li>
-                        <li><a href="#">Community Forum</a></li>
                         <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">System Status</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="footer-col-title">Connect</h4>
                     <ul class="footer-links">
-                        <li><a href="#">Twitter / X</a></li>
                         <li><a href="#">GitHub</a></li>
                         <li><a href="#">LinkedIn</a></li>
-                        <li><a href="#">YouTube</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p class="footer-copy">&copy; 2026 Catalyst Inc. All rights reserved. Design: <a href="https://templatemo.com/tm-618-the-catalyst" target="_blank" rel="nofollow">TemplateMo</a></p>
-                <ul class="footer-bottom-links">
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">Terms</a></li>
-                    <li><a href="#">Cookies</a></li>
-                </ul>
+                <p class="footer-copy">&copy; 2026 Titan Robotics Inc. All rights reserved. Design: <a href="https://templatemo.com/tm-618-the-catalyst" target="_blank" rel="nofollow">TemplateMo</a></p>
             </div>
         </div>
     </footer>
 
-    <!-- Template JS -->
     <script src="templatemo-catalyst-script.js"></script>
-
 </body>
 </html>
