@@ -1,831 +1,452 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Titan Robotics</title>
 
-
-
-    <!--
-
-
-
-    Titan Robotics
-
-
-
-    -->
-
-
-
     <!-- Google Fonts -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-
-
     <!-- Template CSS -->
-
     <link rel="stylesheet" href="templatemo-catalyst-style.css">
-
 </head>
-
 <body>
-
     <!-- ===== NAVIGATION ===== -->
-
     <nav class="nav" role="navigation" aria-label="Main navigation">
-
         <div class="nav-inner">
-
-            <a href="#" class="nav-logo" aria-label="Catalyst Home">
-
+            <a href="#" class="nav-logo" aria-label="Titan Robotics Home">
                 <span class="nav-logo-mark">
-
-                    <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-
-                        <path d="M3 8L7 4L13 8L7 12L3 8Z" fill="#111"/>
-
+                    <!--
+                        LOGO SVG — Replace the <svg> block below with your own imported SVG.
+                        Keep the outer <span class="nav-logo-mark"> wrapper so sizing stays consistent.
+                        Recommended: 28×28px viewBox, single color using fill="currentColor"
+                        so it inherits the accent color automatically.
+                    -->
+                    <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <!-- Titan gear / cog mark -->
+                        <circle cx="14" cy="14" r="5" fill="#111"/>
+                        <rect x="12.5" y="1"  width="3" height="5" rx="1.5" fill="#111"/>
+                        <rect x="12.5" y="22" width="3" height="5" rx="1.5" fill="#111"/>
+                        <rect x="1"  y="12.5" width="5" height="3" rx="1.5" fill="#111"/>
+                        <rect x="22" y="12.5" width="5" height="3" rx="1.5" fill="#111"/>
+                        <rect x="3.9" y="3.9"  width="3" height="5" rx="1.5" transform="rotate(45 5.4 5.4)"  fill="#111"/>
+                        <rect x="19" y="3.9"   width="3" height="5" rx="1.5" transform="rotate(-45 20.5 5.4)" fill="#111"/>
+                        <rect x="3.9" y="19.1" width="3" height="5" rx="1.5" transform="rotate(-45 5.4 20.6)" fill="#111"/>
+                        <rect x="19" y="19.1"  width="3" height="5" rx="1.5" transform="rotate(45 20.5 20.6)"  fill="#111"/>
                     </svg>
-
                 </span>
-
                 Titan Robotics
-
             </a>
-
             <ul class="nav-links" id="navLinks">
-
                 <li><a href="#metrics">Performance</a></li>
-
                 <li><a href="#engine">Features</a></li>
-
-                <li><a href="#pricing">Pricing</a></li>
-
+                <li><a href="#shop">Shop</a></li>
                 <li><a href="#faq">FAQ</a></li>
-
             </ul>
-
             <div class="nav-cta">
-
                 <a href="#" class="btn-ghost">Log In</a>
-
-                <a href="#pricing" class="btn-acid">Sign Up</a>
-
+                <a href="#shop" class="btn-acid">Shop Now</a>
             </div>
-
             <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
-
                 <span></span>
-
             </button>
-
         </div>
-
     </nav>
 
-
-
     <!-- ===== SECTION 1: HERO ===== -->
-
     <section class="hero">
-
         <div class="container">
-
             <div class="hero-badge reveal">
-
                 <span class="hero-badge-dot"></span>
-
                 v1.3
-
             </div>
-
             <h1 class="reveal">Affordable actuators built for <span class="accent-word">power</span></h1>
-
             <p class="hero-sub reveal">Multi-material 3D printed high torque actuators designed for everyday inventors.</p>
-
             <div class="hero-actions reveal">
-
-                <a href="#pricing" class="btn-acid">
-
-                    Buy Now
-
+                <a href="#shop" class="btn-acid">
+                    Shop Now
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-
                 </a>
-
                 <a href="#hero-video" class="btn-ghost">Watch Demo</a>
-
             </div>
-
         </div>
-
     </section>
-
-    
 
     <!-- ===== HERO VIDEO (full width) ===== -->
-
     <section class="hero-video-section" id="hero-video">
-
         <video autoplay muted loop playsinline>
-
             <source src="videos/hero.mp4" type="video/mp4" />
-
         </video>
-
     </section>
-
-
 
     <!-- ===== SECTION 2: SPEED METRICS ===== -->
-
     <section class="metrics" id="metrics">
-
         <div class="container">
-
             <p class="metrics-label reveal">Performance that speaks for itself</p>
-
             <div class="metrics-grid">
-
                 <div class="metric-item reveal">
-
                     <div class="metric-number"><span class="metric-highlight">21:1</span><span class="metric-unit">ratio</span></div>
-
                     <p class="metric-desc">High torque ratio for high strength applications</p>
-
                 </div>
-
                 <div class="metric-item reveal">
-
                     <div class="metric-number">22<span class="metric-unit">mm</span></div>
-
                     <p class="metric-desc">Compact design perfect for robotics</p>
-
                 </div>
-
                 <div class="metric-item reveal">
-
                     <div class="metric-number">3<span class="metric-unit">x</span></div>
-
                     <p class="metric-desc">More cost effective than traditional cycloidal drives</p>
-
                 </div>
-
             </div>
-
         </div>
-
     </section>
-
-
 
     <!-- ===== SECTION 3: THE ENGINE — BENTO GRID ===== -->
-
     <section class="engine" id="engine">
-
         <div class="container">
-
             <div class="section-header reveal">
-
                 <p class="section-tag">The Drive</p>
-
                 <h2 class="section-title">Essential Specifications</h2>
-
             </div>
-
             <div class="bento-grid">
-
                 <div class="card bento-card reveal">
-
                     <div class="bento-card-icon">
-
                         <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 4 4-6"/></svg>
-
                     </div>
-
                     <h3>Real-Time Analytics</h3>
-
                     <p>Stream, transform, and visualize data the instant it arrives. No batching, no waiting, no stale dashboards.</p>
-
                     <div class="bento-card-visual">
-
                         <div class="mini-bars">
-
                             <div class="mini-bar" style="height: 35%;"></div>
-
                             <div class="mini-bar" style="height: 55%;"></div>
-
                             <div class="mini-bar" style="height: 40%;"></div>
-
                             <div class="mini-bar highlight" style="height: 80%;"></div>
-
                             <div class="mini-bar" style="height: 60%;"></div>
-
                             <div class="mini-bar" style="height: 45%;"></div>
-
                             <div class="mini-bar highlight" style="height: 95%;"></div>
-
                             <div class="mini-bar" style="height: 70%;"></div>
-
                             <div class="mini-bar" style="height: 50%;"></div>
-
                             <div class="mini-bar" style="height: 65%;"></div>
-
                         </div>
-
                     </div>
-
                 </div>
-
                 <div class="card bento-card reveal">
-
                     <div class="bento-card-icon">
-
                         <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-
                     </div>
-
                     <h3>Pipeline Orchestration</h3>
-
                     <p>Build fault-tolerant data pipelines with visual drag-and-drop. Auto-retry, dead-letter queues, and full observability built in.</p>
-
                     <div class="bento-card-visual">
-
                         <div class="mini-pipeline">
-
                             <div class="mini-pipeline-node">Ingest</div>
-
                             <span class="mini-pipeline-arrow">→</span>
-
                             <div class="mini-pipeline-node">Transform</div>
-
                             <span class="mini-pipeline-arrow">→</span>
-
                             <div class="mini-pipeline-node">Deliver</div>
-
                         </div>
-
                     </div>
-
                 </div>
-
                 <div class="card bento-card reveal">
-
                     <div class="bento-card-icon">
-
                         <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18l6-6-6-6"/><path d="M8 6l-6 6 6 6"/></svg>
-
                     </div>
-
                     <h3>SQL-First Interface</h3>
-
                     <p>Write standard SQL against any source. Auto-completion, version control, and collaborative editing come standard.</p>
-
                     <div class="bento-card-visual">
-
                         <div class="mini-code">
-
                             <span class="keyword">SELECT</span> user_id, <span class="keyword">COUNT</span>(*)<br>
-
                             <span class="keyword">FROM</span> events<br>
-
                             <span class="keyword">WHERE</span> ts > <span class="string">'2026-01'</span><br>
-
                             <span class="keyword">GROUP BY</span> 1 <span class="comment">-- 42ms ⚡</span>
-
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
         </div>
-
     </section>
 
-
-
-    <!-- ===== SECTION 4: PRICING ===== -->
-
-    <section class="pricing" id="pricing">
-
+    <!-- ===== SECTION 4: SHOP ===== -->
+    <section class="shop" id="shop">
         <div class="container">
-
             <div class="section-header reveal">
-
-                <p class="section-tag">Pricing</p>
-
-                <h2 class="section-title">Simple, transparent pricing</h2>
-
+                <p class="section-tag">Shop</p>
+                <h2 class="section-title">Pick your drive</h2>
             </div>
 
-            <div class="toggle-wrap reveal">
-
-                <div class="toggle-container">
-
-                    <button class="toggle-btn" data-plan="monthly" id="toggleMonthly">Monthly</button>
-
-                    <button class="toggle-btn active" data-plan="yearly" id="toggleYearly">Yearly</button>
-
+            <!-- ===== PRODUCT 1 ===== -->
+            <div class="product-card card reveal">
+                <div class="product-gallery">
+                    <!--
+                        PRODUCT 1 PHOTOS — Replace src="" with your image paths.
+                        Recommended: 600×450px or similar 4:3 ratio JPGs/PNGs.
+                        The first image is the main display; clicking thumbnails swaps it in.
+                    -->
+                    <div class="product-main-image">
+                        <img src="images/product1-main.jpg" alt="Compact Cycloidal Drive - main view" onerror="this.parentElement.classList.add('img-placeholder')">
+                    </div>
+                    <div class="product-thumbnails">
+                        <button class="thumb active" data-src="images/product1-main.jpg" aria-label="View main photo">
+                            <img src="images/product1-main.jpg" alt="Front view" onerror="this.parentElement.classList.add('img-placeholder')">
+                        </button>
+                        <button class="thumb" data-src="images/product1-b.jpg" aria-label="View second photo">
+                            <img src="images/product1-b.jpg" alt="Side view" onerror="this.parentElement.classList.add('img-placeholder')">
+                        </button>
+                        <button class="thumb" data-src="images/product1-c.jpg" aria-label="View third photo">
+                            <img src="images/product1-c.jpg" alt="Detail view" onerror="this.parentElement.classList.add('img-placeholder')">
+                        </button>
+                    </div>
                 </div>
-
-                <span class="toggle-save visible" id="toggleSave">Save 25%</span>
-
+                <div class="product-info">
+                    <p class="product-tag">Best Seller</p>
+                    <h3 class="product-name">Compact Cycloidal Drive</h3>
+                    <p class="product-sku">SKU: TR-CCD-22</p>
+                    <p class="product-desc">A high-efficiency 21:1 reduction cycloidal gearbox optimized for tight spaces. The 22mm profile fits inside most hobby robotics joints without sacrificing torque output. Printed in PLA-CF for rigidity with a hardened steel eccentric shaft and output pins.</p>
+                    <ul class="product-specs">
+                        <li><span>Reduction ratio</span><span>21:1</span></li>
+                        <li><span>Outer diameter</span><span>22 mm</span></li>
+                        <li><span>Recommended motor</span><span>NEMA 17</span></li>
+                        <li><span>Material</span><span>PLA-CF + steel pins</span></li>
+                    </ul>
+                    <div class="product-buy">
+                        <div class="product-price">$<span>38</span><span class="product-price-cents">.00</span></div>
+                        <a href="#" class="btn-acid">Add to Cart
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
+                    </div>
+                </div>
             </div>
 
-            <div class="pricing-grid">
-
-                <!-- Starter -->
-
-                <div class="card pricing-card reveal">
-
-                    <div class="pricing-plan-name">Starter</div>
-
-                    <div class="pricing-plan-desc">For small teams getting started</div>
-
-                    <div class="pricing-amount">
-
-                        <span class="pricing-currency">$</span>
-
-                        <span class="pricing-value" data-monthly="30" data-yearly="22">22</span>
-
+            <!-- ===== PRODUCT 2 ===== -->
+            <div class="product-card card reveal">
+                <div class="product-gallery">
+                    <!--
+                        PRODUCT 2 PHOTOS — Replace src="" with your image paths.
+                    -->
+                    <div class="product-main-image">
+                        <img src="images/product2-main.jpg" alt="Dual-Stage Arm Actuator - main view" onerror="this.parentElement.classList.add('img-placeholder')">
                     </div>
-
-                    <p class="pricing-period">per seat / month</p>
-
-                    <p class="pricing-billed yearly-active" data-monthly="Billed monthly" data-yearly="$264 billed annually">$264 billed annually</p>
-
-                    <a href="#" class="btn-ghost">Get Started</a>
-
-                    <ul class="pricing-features">
-
-                        <li>
-
-                            <svg viewBox="0 0 18 18" fill="none"><path d="M4 9l3.5 3.5L14 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-
-                            Up to 5 team members
-
-                        </li>
-
-                        <li>
-
-                            <svg viewBox="0 0 18 18" fill="none"><path d="M4 9l3.5 3.5L14 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-
-                            1 billion events / month
-
-                        </li>
-
-                        <li>
-
-                            <svg viewBox="0 0 18 18" fill="none"><path d="M4 9l3.5 3.5L14 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-
-                            7-day data retention
-
-                        </li>
-
-                        <li>
-
-                            <svg viewBox="0 0 18 18" fill="none"><path d="M4 9l3.5 3.5L14 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-
-                            Community support
-
-                        </li>
-
-                    </ul>
-
-                </div>
-
-                <!-- Pro -->
-
-                <div class="card pricing-card featured reveal">
-
-                    <div class="pricing-plan-name">Pro</div>
-
-                    <div class="pricing-plan-desc">For scaling data teams</div>
-
-                    <div class="pricing-amount">
-
-                        <span class="pricing-currency">$</span>
-
-                        <span class="pricing-value" data-monthly="100" data-yearly="75">75</span>
-
+                    <div class="product-thumbnails">
+                        <button class="thumb active" data-src="images/product2-main.jpg" aria-label="View main photo">
+                            <img src="images/product2-main.jpg" alt="Front view" onerror="this.parentElement.classList.add('img-placeholder')">
+                        </button>
+                        <button class="thumb" data-src="images/product2-b.jpg" aria-label="View second photo">
+                            <img src="images/product2-b.jpg" alt="Side view" onerror="this.parentElement.classList.add('img-placeholder')">
+                        </button>
+                        <button class="thumb" data-src="images/product2-c.jpg" aria-label="View third photo">
+                            <img src="images/product2-c.jpg" alt="Exploded view" onerror="this.parentElement.classList.add('img-placeholder')">
+                        </button>
                     </div>
-
-                    <p class="pricing-period">per seat / month</p>
-
-                    <p class="pricing-billed yearly-active" data-monthly="Billed monthly" data-yearly="$900 billed annually">$900 billed annually</p>
-
-                    <a href="#" class="btn-acid">Get Started</a>
-
-                    <ul class="pricing-features">
-
-                        <li>
-
-                            <svg viewBox="0 0 18 18" fill="none"><path d="M4 9l3.5 3.5L14 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-
-                            Unlimited team members
-
-                        </li>
-
-                        <li>
-
-                            <svg viewBox="0 0 18 18" fill="none"><path d="M4 9l3.5 3.5L14 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-
-                            50 billion events / month
-
-                        </li>
-
-                        <li>
-
-                            <svg viewBox="0 0 18 18" fill="none"><path d="M4 9l3.5 3.5L14 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-
-                            Unlimited data retention
-
-                        </li>
-
-                        <li>
-
-                            <svg viewBox="0 0 18 18" fill="none"><path d="M4 9l3.5 3.5L14 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-
-                            Priority support + SLA
-
-                        </li>
-
-                        <li>
-
-                            <svg viewBox="0 0 18 18" fill="none"><path d="M4 9l3.5 3.5L14 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-
-                            SSO &amp; audit logs
-
-                        </li>
-
-                    </ul>
-
                 </div>
-
-                <!-- Enterprise -->
-
-                <div class="card pricing-card reveal">
-
-                    <div class="pricing-plan-name">Enterprise</div>
-
-                    <div class="pricing-plan-desc">For mission-critical deployments</div>
-
-                    <div class="pricing-amount">
-
-                        <span class="pricing-currency">$</span>
-
-                        <span class="pricing-value" data-monthly="500" data-yearly="375">375</span>
-
+                <div class="product-info">
+                    <p class="product-tag">New Release</p>
+                    <h3 class="product-name">Dual-Stage Arm Actuator</h3>
+                    <p class="product-sku">SKU: TR-DSA-48</p>
+                    <p class="product-desc">Two stacked cycloidal stages give this actuator a 441:1 overall reduction — enough holding torque to lock a full robotic arm segment under load without a brake. Designed around a 48mm frame with integrated mounting flanges compatible with 20mm aluminum extrusion.</p>
+                    <ul class="product-specs">
+                        <li><span>Reduction ratio</span><span>441:1 (21:1 × 21:1)</span></li>
+                        <li><span>Outer diameter</span><span>48 mm</span></li>
+                        <li><span>Recommended motor</span><span>NEMA 17 / NEMA 23</span></li>
+                        <li><span>Material</span><span>PETG + steel pins</span></li>
+                    </ul>
+                    <div class="product-buy">
+                        <div class="product-price">$<span>64</span><span class="product-price-cents">.00</span></div>
+                        <a href="#" class="btn-acid">Add to Cart
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
                     </div>
-
-                    <p class="pricing-period">starts from / month</p>
-
-                    <p class="pricing-billed yearly-active" data-monthly="Billed monthly" data-yearly="$4,500 billed annually">$4,500 billed annually</p>
-
-                    <a href="#" class="btn-ghost">Contact Sales</a>
-
-                    <ul class="pricing-features">
-
-                        <li>
-
-                            <svg viewBox="0 0 18 18" fill="none"><path d="M4 9l3.5 3.5L14 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-
-                            Everything in Pro
-
-                        </li>
-
-                        <li>
-
-                            <svg viewBox="0 0 18 18" fill="none"><path d="M4 9l3.5 3.5L14 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-
-                            Dedicated infrastructure
-
-                        </li>
-
-                        <li>
-
-                            <svg viewBox="0 0 18 18" fill="none"><path d="M4 9l3.5 3.5L14 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-
-                            Custom integrations
-
-                        </li>
-
-                        <li>
-
-                            <svg viewBox="0 0 18 18" fill="none"><path d="M4 9l3.5 3.5L14 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-
-                            24/7 dedicated support
-
-                        </li>
-
-                        <li>
-
-                            <svg viewBox="0 0 18 18" fill="none"><path d="M4 9l3.5 3.5L14 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-
-                            99.99% SLA guarantee
-
-                        </li>
-
-                    </ul>
-
                 </div>
+            </div>
 
+            <!-- ===== PRODUCT 3 ===== -->
+            <div class="product-card card reveal">
+                <div class="product-gallery">
+                    <!--
+                        PRODUCT 3 PHOTOS — Replace src="" with your image paths.
+                    -->
+                    <div class="product-main-image">
+                        <img src="images/product3-main.jpg" alt="Servo Gripper Module - main view" onerror="this.parentElement.classList.add('img-placeholder')">
+                    </div>
+                    <div class="product-thumbnails">
+                        <button class="thumb active" data-src="images/product3-main.jpg" aria-label="View main photo">
+                            <img src="images/product3-main.jpg" alt="Front view" onerror="this.parentElement.classList.add('img-placeholder')">
+                        </button>
+                        <button class="thumb" data-src="images/product3-b.jpg" aria-label="View second photo">
+                            <img src="images/product3-b.jpg" alt="Open position" onerror="this.parentElement.classList.add('img-placeholder')">
+                        </button>
+                        <button class="thumb" data-src="images/product3-c.jpg" aria-label="View third photo">
+                            <img src="images/product3-c.jpg" alt="Closed position" onerror="this.parentElement.classList.add('img-placeholder')">
+                        </button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <p class="product-tag">Popular</p>
+                    <h3 class="product-name">Servo Gripper Module</h3>
+                    <p class="product-sku">SKU: TR-SGM-01</p>
+                    <p class="product-desc">A parallel-jaw end-effector driven by a standard SG90 or MG996R servo. Finger inserts are swappable — choose flat pads for delicate objects or V-grooves for cylindrical stock. Mounts to any TR actuator output flange via four M3 bolts.</p>
+                    <ul class="product-specs">
+                        <li><span>Grip span</span><span>0 – 60 mm</span></li>
+                        <li><span>Compatible servos</span><span>SG90, MG996R</span></li>
+                        <li><span>Mount pattern</span><span>4× M3, 20mm BCD</span></li>
+                        <li><span>Material</span><span>PLA + TPU finger pads</span></li>
+                    </ul>
+                    <div class="product-buy">
+                        <div class="product-price">$<span>22</span><span class="product-price-cents">.00</span></div>
+                        <a href="#" class="btn-acid">Add to Cart
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
+                    </div>
+                </div>
             </div>
 
         </div>
-
     </section>
-
-
 
     <!-- ===== SECTION 5: FAQ ===== -->
-
     <section class="faq" id="faq">
-
         <div class="container">
-
             <div class="section-header reveal">
-
                 <p class="section-tag">FAQ</p>
-
                 <h2 class="section-title">Common questions, straight answers</h2>
-
             </div>
-
             <div class="faq-controls reveal">
-
                 <button class="faq-ctrl-btn" id="faqExpandAll">Expand All</button>
-
                 <button class="faq-ctrl-btn" id="faqCollapseAll">Collapse All</button>
-
             </div>
-
             <div class="faq-list">
-
                 <div class="faq-item reveal">
-
                     <button class="faq-question" aria-expanded="false">
-
                         How long does the free trial last?
-
                         <span class="faq-icon"><svg viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7h12" stroke="#111" stroke-width="1.5" stroke-linecap="round"/></svg></span>
-
                     </button>
-
                     <div class="faq-answer">
-
                         <div class="faq-answer-inner">Every plan includes a 14-day free trial with full access to all features. No credit card required to get started. At the end of the trial, you can choose a plan or export your data.</div>
-
                     </div>
-
                 </div>
-
                 <div class="faq-item reveal">
-
                     <button class="faq-question" aria-expanded="false">
-
                         Can I switch plans later?
-
                         <span class="faq-icon"><svg viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7h12" stroke="#111" stroke-width="1.5" stroke-linecap="round"/></svg></span>
-
                     </button>
-
                     <div class="faq-answer">
-
                         <div class="faq-answer-inner">Yes. Upgrade or downgrade any time from your account settings. When upgrading, you only pay the prorated difference. When downgrading, the remaining balance is applied as credit toward future invoices.</div>
-
                     </div>
-
                 </div>
-
                 <div class="faq-item reveal">
-
                     <button class="faq-question" aria-expanded="false">
-
                         What data sources do you support?
-
                         <span class="faq-icon"><svg viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7h12" stroke="#111" stroke-width="1.5" stroke-linecap="round"/></svg></span>
-
                     </button>
-
                     <div class="faq-answer">
-
                         <div class="faq-answer-inner">Catalyst connects to 50+ data sources out of the box, including PostgreSQL, MySQL, BigQuery, Snowflake, Redshift, S3, Kafka, and most popular REST APIs. Custom connectors are available on the Enterprise plan.</div>
-
                     </div>
-
                 </div>
-
                 <div class="faq-item reveal">
-
                     <button class="faq-question" aria-expanded="false">
-
                         Is my data secure?
-
                         <span class="faq-icon"><svg viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7h12" stroke="#111" stroke-width="1.5" stroke-linecap="round"/></svg></span>
-
                     </button>
-
                     <div class="faq-answer">
-
                         <div class="faq-answer-inner">Absolutely. All data is encrypted at rest (AES-256) and in transit (TLS 1.3). We are SOC 2 Type II certified and GDPR compliant. Enterprise customers also get dedicated infrastructure with VPC peering and custom encryption keys.</div>
-
                     </div>
-
                 </div>
-
                 <div class="faq-item reveal">
-
                     <button class="faq-question" aria-expanded="false">
-
                         Do you offer onboarding support?
-
                         <span class="faq-icon"><svg viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7h12" stroke="#111" stroke-width="1.5" stroke-linecap="round"/></svg></span>
-
                     </button>
-
                     <div class="faq-answer">
-
                         <div class="faq-answer-inner">Pro customers get access to our onboarding team for the first 30 days. Enterprise customers receive a dedicated solutions engineer for the full implementation. All plans include access to our docs, tutorials, and community forum.</div>
-
                     </div>
-
                 </div>
-
             </div>
-
         </div>
-
     </section>
-
-
 
     <!-- ===== SECTION 6: CTA BANNER ===== -->
-
     <section class="cta-banner">
-
         <div class="container">
-
             <div class="cta-banner-inner reveal">
-
                 <p class="cta-banner-tag">Get started today</p>
-
-                <h2>Ready to accelerate your data?</h2>
-
-                <p>Join 2,000+ teams shipping faster with sub-second analytics. Free for 14 days.</p>
-
+                <h2>Ready to build something powerful?</h2>
+                <p>Join inventors and engineers shipping real robots with Titan actuators.</p>
                 <div class="cta-banner-actions">
-
-                    <a href="#" class="btn-acid">
-
-                        Start Free Trial
-
+                    <a href="#shop" class="btn-acid">
+                        Shop Now
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-
                     </a>
-
-                    <a href="#" class="btn-dark-ghost">Talk to Sales</a>
-
+                    <a href="#" class="btn-dark-ghost">Contact Us</a>
                 </div>
-
             </div>
-
         </div>
-
     </section>
 
-
-
     <!-- ===== SECTION 7: FOOTER ===== -->
-
     <footer class="footer" id="footer">
-
         <div class="container">
-
             <div class="footer-grid">
-
                 <div>
-
-                    <a href="#" class="nav-logo" aria-label="Catalyst Home">
-
+                    <a href="#" class="nav-logo" aria-label="Titan Robotics Home">
                         <span class="nav-logo-mark">
-
-                            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-
-                                <path d="M3 8L7 4L13 8L7 12L3 8Z" fill="#111"/>
-
+                            <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <circle cx="14" cy="14" r="5" fill="#111"/>
+                                <rect x="12.5" y="1"  width="3" height="5" rx="1.5" fill="#111"/>
+                                <rect x="12.5" y="22" width="3" height="5" rx="1.5" fill="#111"/>
+                                <rect x="1"  y="12.5" width="5" height="3" rx="1.5" fill="#111"/>
+                                <rect x="22" y="12.5" width="5" height="3" rx="1.5" fill="#111"/>
+                                <rect x="3.9" y="3.9"  width="3" height="5" rx="1.5" transform="rotate(45 5.4 5.4)"  fill="#111"/>
+                                <rect x="19" y="3.9"   width="3" height="5" rx="1.5" transform="rotate(-45 20.5 5.4)" fill="#111"/>
+                                <rect x="3.9" y="19.1" width="3" height="5" rx="1.5" transform="rotate(-45 5.4 20.6)" fill="#111"/>
+                                <rect x="19" y="19.1"  width="3" height="5" rx="1.5" transform="rotate(45 20.5 20.6)"  fill="#111"/>
                             </svg>
-
                         </span>
-
-                        Catalyst
-
+                        Titan Robotics
                     </a>
-
-                    <p class="footer-brand-desc">The analytics platform built for speed. Sub-second queries, real-time pipelines, and infinite scale.</p>
-
+                    <p class="footer-brand-desc">High-torque 3D printed actuators for everyday inventors. Built for power, priced for everyone.</p>
                 </div>
-
                 <div>
-
                     <h4 class="footer-col-title">Resources</h4>
-
                     <ul class="footer-links">
-
                         <li><a href="#">Documentation</a></li>
-
                         <li><a href="#">API Reference</a></li>
-
                         <li><a href="#">Blog</a></li>
-
                         <li><a href="#">Changelog</a></li>
-
                         <li><a href="#">Status Page</a></li>
-
                     </ul>
-
                 </div>
-
                 <div>
-
                     <h4 class="footer-col-title">Support</h4>
-
                     <ul class="footer-links">
-
                         <li><a href="#">Help Center</a></li>
-
                         <li><a href="#">Community Forum</a></li>
-
                         <li><a href="#">Contact Us</a></li>
-
                         <li><a href="#">System Status</a></li>
-
                     </ul>
-
                 </div>
-
                 <div>
-
                     <h4 class="footer-col-title">Connect</h4>
-
                     <ul class="footer-links">
-
                         <li><a href="#">Twitter / X</a></li>
-
                         <li><a href="#">GitHub</a></li>
-
                         <li><a href="#">LinkedIn</a></li>
-
                         <li><a href="#">YouTube</a></li>
-
                     </ul>
-
                 </div>
-
             </div>
-
             <div class="footer-bottom">
-
-                <p class="footer-copy">&copy; 2026 Catalyst Inc. All rights reserved. Design: <a href="https://templatemo.com/tm-618-the-catalyst" target="_blank" rel="nofollow">TemplateMo</a></p>
-
+                <p class="footer-copy">&copy; 2026 Titan Robotics. All rights reserved.</p>
                 <ul class="footer-bottom-links">
-
                     <li><a href="#">Privacy</a></li>
-
                     <li><a href="#">Terms</a></li>
-
                     <li><a href="#">Cookies</a></li>
-
                 </ul>
-
             </div>
-
         </div>
-
     </footer>
 
-
-
     <!-- Template JS -->
-
     <script src="templatemo-catalyst-script.js"></script>
 
-
-
 </body>
-
 </html>
