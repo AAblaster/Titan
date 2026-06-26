@@ -1188,3 +1188,103 @@ img {
         transform: none;
     }
 }
+
+/* ==========================================================================
+   ===== SHOP SECTION ARCHITECTURE (REPLACES PRICING) =======================
+   ========================================================================== */
+.shop {
+    padding: var(--section-pad) 0;
+}
+
+.shop-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+}
+
+@media (max-width: 992px) {
+    .shop-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .shop-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* --- Product Cards Components --- */
+.product-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100%;
+}
+
+/* Multi-photo Grid Gallery layout: 1 large main view, 2 stacked thumbnails */
+.product-gallery {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(2, 80px);
+    gap: 8px;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.02);
+    border-bottom: 1px solid var(--border);
+}
+
+.product-gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+    background-color: var(--border-light); /* Fallback style until image imports */
+}
+
+.product-gallery .img-main {
+    grid-row: span 2;
+    height: 168px;
+}
+
+/* --- Interior Card Content --- */
+.product-info {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.product-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 12px;
+    gap: 12px;
+}
+
+.product-title {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--text);
+}
+
+.product-price {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--accent);
+    white-space: nowrap;
+}
+
+.product-desc {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin-bottom: 24px;
+    flex-grow: 1;
+}
+
+/* Auxiliary Helper for Uniform Buttons */
+.w-100 {
+    width: 100%;
+}
