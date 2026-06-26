@@ -1,9 +1,6 @@
 /*
-
 TemplateMo 618 The Catalyst
-
 https://templatemo.com/tm-618-the-catalyst
-
 */
 
 /* ===== Mobile Nav Toggle ===== */
@@ -26,36 +23,6 @@ navLinks.querySelectorAll('a').forEach(link => {
         navToggle.setAttribute('aria-expanded', 'false');
     });
 });
-
-/* ===== Pricing Toggle ===== */
-const toggleMonthly = document.getElementById('toggleMonthly');
-const toggleYearly  = document.getElementById('toggleYearly');
-const toggleSave    = document.getElementById('toggleSave');
-const priceValues   = document.querySelectorAll('.pricing-value[data-monthly]');
-const billedTexts   = document.querySelectorAll('.pricing-billed[data-monthly]');
-
-function setPlan(plan) {
-    priceValues.forEach(el => {
-        el.textContent = el.dataset[plan];
-    });
-    billedTexts.forEach(el => {
-        el.textContent = el.dataset[plan];
-        el.classList.toggle('yearly-active', plan === 'yearly');
-    });
-
-    if (plan === 'yearly') {
-        toggleYearly.classList.add('active');
-        toggleMonthly.classList.remove('active');
-        toggleSave.classList.add('visible');
-    } else {
-        toggleMonthly.classList.add('active');
-        toggleYearly.classList.remove('active');
-        toggleSave.classList.remove('visible');
-    }
-}
-
-toggleMonthly.addEventListener('click', () => setPlan('monthly'));
-toggleYearly.addEventListener('click',  () => setPlan('yearly'));
 
 /* ===== FAQ Accordion ===== */
 function faqOpen(item) {
@@ -91,8 +58,43 @@ document.getElementById('faqCollapseAll').addEventListener('click', () => {
     document.querySelectorAll('.faq-item').forEach(item => faqClose(item));
 });
 
+/* ===== Product Gallery — Thumbnail Switcher =====
+   Each .product-card has:
+     .product-main-image > img   — the large display image
+     .product-thumbnails > .thumb[data-src]  — clickable thumbnails
+
+   Clicking a thumbnail:
+     1. Updates the main image src and alt to match the thumbnail
+     2. Marks the clicked thumb .active and removes it from siblings
+*/
+document.querySelectorAll('.product-card').forEach(card => {
+    const mainImg   = card.querySelector('.product-main-image img');
+    const thumbs    = card.querySelectorAll('.thumb');
+
+    thumbs.forEach(thumb => {
+        thumb.addEventListener('click', () => {
+            const newSrc = thumb.dataset.src;
+            const newAlt = thumb.querySelector('img') ? thumb.querySelector('img').alt : '';
+
+            if (mainImg && newSrc) {
+                /* Fade out → swap src → fade in */
+                mainImg.style.opacity = '0';
+                mainImg.style.transition = 'opacity 0.18s ease';
+                setTimeout(() => {
+                    mainImg.src = newSrc;
+                    mainImg.alt = newAlt;
+                    mainImg.style.opacity = '1';
+                }, 180);
+            }
+
+            /* Update active state */
+            thumbs.forEach(t => t.classList.remove('active'));
+            thumb.classList.add('active');
+        });
+    });
+});
+
 /* ===== Scroll Reveal ===== */
-/* 3-second fallback for iframe previews where IntersectionObserver may not fire */
 const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 if (!prefersReduced) {
