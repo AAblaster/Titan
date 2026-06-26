@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Icon: shredder
+  Set: Sharp free icons
+  Author: Streamline (https://github.com/webalys-hq/streamline-vectors)
+  License: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+  Source: https://iconify.design
+-->
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 24 24"
+     width="24"
+     height="24">
+  <title>Ancient Greek Temple Icon</title>
+  <metadata>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+             xmlns:dc="http://purl.org/dc/elements/1.1/"
+             xmlns:cc="http://creativecommons.org/ns#">
+      <cc:Work rdf:about="">
+        <dc:title>Ancient Greek Temple Icon</dc:title>
+        <dc:description>Minimalist icon of an ancient Greek temple with a classic column design, ideal for history, architecture, or cultural-themed projects. Perfect for educational materials, travel guides, or museum promotions.</dc:description>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Streamline</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:source>https://github.com/webalys-hq/streamline-vectors</dc:source>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>Streamline</dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <cc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>Greek-temple</rdf:li>
+            <rdf:li>ancient-architecture</rdf:li>
+            <rdf:li>classical-building</rdf:li>
+            <rdf:li>historical-landmark</rdf:li>
+            <rdf:li>temple-icon</rdf:li>
+            <rdf:li>Greek-culture</rdf:li>
+            <rdf:li>ancient-Greece</rdf:li>
+            <rdf:li>architecture-icon</rdf:li>
+            <rdf:li>column-design</rdf:li>
+            <rdf:li>historical-icon</rdf:li>
+            <rdf:li>cultural-symbol</rdf:li>
+            <rdf:li>heritage-site</rdf:li>
+            <rdf:li>minimalist-temple</rdf:li>
+            <rdf:li>classical-art</rdf:li>
+            <rdf:li>ancient-monument</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="https://creativecommons.org/licenses/by/4.0/">
+        <dc:title>CC BY 4.0 (CC-BY-4.0)</dc:title>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5.5 17H2V9h20v8h-3.5M18 7V2H6v5m-1 6h14"/><path d="M8 13v7.5a2 2 0 0 1-2 2H5M16 13v7.5a2 2 0 0 0 2 2h1M12 13v10"/></g>
+</svg>
