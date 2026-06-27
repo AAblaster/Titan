@@ -1,0 +1,17 @@
+{
+  "headers": [
+    {
+      "source": "/downloads/(.*)\\.3mf",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/vnd.ms-3mfdocument"
+        },
+        {
+          "key": "Content-Disposition",
+          "value": "attachment"
+        }
+      ]
+    }
+  ]
+}
