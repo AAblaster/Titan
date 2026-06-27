@@ -167,18 +167,18 @@
                 <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="24" fill="#22C55E" opacity="0.12"/><path d="M14 24l7 7 13-14" stroke="#22C55E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
             <h2>Order placed!</h2>
-            <p>Thanks for your order. A confirmation will be sent to your email.</p>
+            <p>Thanks for your order. Your print file is downloading now — check your downloads folder. A confirmation will be sent to your email.</p>
             <a href="index.html" class="btn-acid">Back to Home</a>
         </div>
     </div>
 
     <script src="templatemo-catalyst-script.js"></script>
     <script>
-        // Product data
+        // Product data — file maps to downloads/ folder
         const PRODUCTS = {
-            '1': { name: 'Compact Cycloidal Drive', sku: 'TR-CCD-22', price: 38 },
-            '2': { name: 'Dual-Stage Arm Actuator',  sku: 'TR-DSA-48', price: 64 },
-            '3': { name: 'Servo Gripper Module',      sku: 'TR-SGM-01', price: 22 },
+            '1': { name: 'Compact Cycloidal Drive', sku: 'TR-CCD-22', price: 38, file: 'downloads/compact-cycloidal-drive.3mf' },
+            '2': { name: 'Dual-Stage Arm Actuator',  sku: 'TR-DSA-48', price: 64, file: 'downloads/dual-stage-actuator.3mf' },
+            '3': { name: 'Servo Gripper Module',      sku: 'TR-SGM-01', price: 22, file: 'downloads/servo-gripper.3mf' },
         };
 
         // Read ?product= from URL
@@ -213,10 +213,22 @@
             e.target.value = val;
         });
 
-        // Submit — show success overlay (demo only)
+        // Submit — show success overlay, then trigger download
         document.getElementById('checkoutSubmit').addEventListener('click', () => {
-            document.getElementById('orderSuccess').hidden = false;
+            const overlay = document.getElementById('orderSuccess');
+            overlay.hidden = false;
             document.body.style.overflow = 'hidden';
+
+            // Wait a beat so the user sees the success message before download dialog appears
+            setTimeout(() => {
+                const a = document.createElement('a');
+                a.href = product.file;
+                // Suggest a clean filename: e.g. "TR-CCD-22.3mf"
+                a.download = product.sku + '.3mf';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+            }, 1200);
         });
     </script>
 </body>
